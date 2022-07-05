@@ -1,0 +1,566 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `main.o', needed by `gpio_toggle.hex'.  Stop.
+
+
+# Make data base, printed on Mon Jul  4 22:43:36 2022
+
+# Variables
+
+# makefile (from `Makefile', line 18)
+WCH_CORE_INC_DIR = $(WCH_DIR)/Core
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 60)
+INCLUDES = -I $(USER_DIR) -I $(WCH_CORE_INC_DIR) -I $(WCH_PERI_INC_DIR) -I $(WCH_DEBUG_INC_DIR)
+# makefile (from `Makefile', line 23)
+WCH_START_SOURCES = $(WCH_START_OBJS:.o=.s)
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/neuberfran/csfs/openocd/ch32v307/EVT/EXAM/GPIO/GPIO_Toggle/User
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 9)
+ELF_FILE_NAME = $(APP_NAME).elf
+# environment
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 66)
+SFLAGS = -march=rv32imac_zicsr $(COMMON_FLAGS)
+# environment
+MAVEN_HOME = /var/root/tools/apache-maven-3.6.3/bin
+# makefile (from `Makefile', line 20)
+WCH_START_INC_DIR = $(WCH_DIR)/Startup
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 22)
+WCH_START_OBJS = startup_ch32v30x_D8C.o
+# makefile (from `Makefile', line 10)
+DUMP_FILE_NAME = $(APP_NAME).lst
+# makefile (from `Makefile', line 12)
+MAP_FILE_NAME = $(APP_NAME).map
+# makefile (from `Makefile', line 44)
+SOURCES = $(USER_SOURCES) $(WCH_START_SOURCES) $(WCH_PERI_SOURCES) $(WCH_DEBUG_SOURCES)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from `Makefile', line 24)
+WCH_START_DEPENDS = $(WCH_START_SOURCES:.s=.d)
+# makefile (from `Makefile', line 30)
+WCH_PERI_SOURCES = $(WCH_PERI_OBJS:.o=.c)
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/2g/jkg08fbx4_b84q0j67p2s5zm0000gn/T/vscode-ipc-9b628402-c138-4999-89c4-20af6b4a5181.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /Users/neuberfran/GCP2/google-cloud-sdk/bin:/Users/neuberfran/anaconda3/bin:/Users/neuberfran/anaconda3/condabin:/Users/neuberfran/Documents/flutter/bin:/var/root/tools/apache-maven-3.6.3/bin:/Users/neuberfran/Library/Developer/android-sdk-macosx/tools:/Users/neuberfran/Library/Developer/android-sdk-macosx/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/Desktop:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+# makefile (from `Makefile', line 26)
+WCH_PERI_INC_DIR = $(WCH_DIR)/Peripheral/inc
+# makefile (from `Makefile', line 57)
+LD = $(CC)
+# makefile (from `Makefile', line 28)
+WCH_PERI_OBJS = ch32v30x_gpio.o ch32v30x_usart.o ch32v30x_rcc.o ch32v30x_misc.o
+# makefile (from `Makefile', line 17)
+WCH_DIR = ../../../SRC
+# makefile (from `Makefile', line 67)
+CFLAGS = -march=rv32imac $(COMMON_FLAGS)
+# makefile (from `Makefile', line 31)
+WCH_PERI_DEPENDS = $(WCH_PERI_SOURCES:.c=.d)
+# makefile (from `Makefile', line 47)
+VPATH = $(USER_DIR)     $(WCH_START_SRC_DIR) $(WCH_PERI_SRC_DIR) $(WCH_DEBUG_SRC_DIR)
+# makefile (from `Makefile', line 54)
+TOOL_PATH = $(HOME)/x-tools/$(TOOL_PREFIX)
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 68)
+LDFLAGS = -march=rv32imac $(COMMON_FLAGS) -T $(WCH_LD_SCRIPT) -nostartfiles -Xlinker --gc-sections -Wl,-Map,$(MAP_FILE_NAME) -specs=nano.specs -specs=nosys.specs
+# environment
+ANDROID_HOME = /Users/neuberfran/Library/Developer/android-sdk-macosx
+# makefile (from `Makefile', line 55)
+TOOL_LIB = $(TOOL_PATH)/$(TOOL_PREFIX)
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.EAAdJTPxx8/Listeners
+# makefile (from `Makefile', line 4)
+USER_DIR = .
+# automatic
+%F = $(notdir $%)
+# environment
+CONDA_EXE = /Users/neuberfran/anaconda3/bin/conda
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from `Makefile', line 46)
+OBJS = $(USER_OBJS)    $(WCH_START_OBJS)    $(WCH_PERI_OBJS)    $(WCH_DEBUG_OBJS)
+# makefile (from `Makefile', line 6)
+USER_SOURCES = $(USER_OBJS:.o=.c)
+# environment
+PWD = /Users/neuberfran/csfs/openocd/ch32v307/EVT/EXAM/GPIO/GPIO_Toggle/User
+# makefile (from `Makefile', line 11)
+HEX_FILE_NAME = $(APP_NAME).hex
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/neuberfran
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# makefile (from `Makefile', line 5)
+USER_OBJS = main.o system_ch32v30x.o
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/neuberfran/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LOGNAME = neuberfran
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# makefile (from `Makefile', line 37)
+WCH_DEBUG_DEPENDS = $(WCH_DEBUG_SOURCES:.c=.d)
+# makefile (from `Makefile', line 45)
+DEPENDS = $(USER_DEPENDS) $(WCH_START_DEPENDS) $(WCH_PERI_DEPENDS) $(WCH_DEBUG_DEPENDS)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 34)
+WCH_DEBUG_SRC_DIR = $(WCH_DIR)/Debug
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# makefile (from `Makefile', line 56)
+CC = $(TOOL_PREFIX)-gcc
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = neuberfran
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 53)
+TOOL_PREFIX = riscv32-unknown-elf
+# makefile (from `Makefile', line 7)
+USER_DEPENDS = $(USER_OBJS:.o=.d)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+CONDA_SHLVL = 1
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# makefile (from `Makefile', line 39)
+WCH_LD_SCRIPT = $(WCH_DIR)/Ld/Link.ld
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/2g/jkg08fbx4_b84q0j67p2s5zm0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/neuberfran/Library/Application Support/Code/1.68.1-main.sock
+# makefile (from `Makefile', line 48)
+TARGETS = $(HEX_FILE_NAME)
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from `Makefile', line 21)
+WCH_START_SRC_DIR = $(WCH_DIR)/Startup
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6576109.6576116
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 59)
+OBJDUMP = $(TOOL_PREFIX)-objdump
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 8)
+APP_NAME = gpio_toggle
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x47
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 62)
+COMMON_FLAGS = -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -g -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -MMD
+# makefile (from `Makefile', line 27)
+WCH_PERI_SRC_DIR = $(WCH_DIR)/Peripheral/src
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 58)
+OBJCOPY = $(TOOL_PREFIX)-objcopy
+# makefile (from `Makefile', line 36)
+WCH_DEBUG_SOURCES = $(WCH_DEBUG_OBJS:.o=.c)
+# default
+SUFFIXES := 
+# environment
+_CE_M = 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# makefile (from `Makefile', line 33)
+WCH_DEBUG_INC_DIR = $(WCH_DIR)/Debug
+# makefile (from `Makefile', line 35)
+WCH_DEBUG_OBJS = debug.o
+# environment
+CONDA_PREFIX = /Users/neuberfran/anaconda3
+# environment
+VSCODE_PID = 748
+# environment
+_CE_CONDA = 
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=115/1024=11%, Rehash=0, Collisions=15/190=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777235, inode 205171): 45 files, no impossibilities.
+# ../../../SRC/Peripheral/src (device 16777235, inode 206763): 28 files, no impossibilities.
+ 
+# ../../../SRC/Debug (device 16777235, inode 206729): 4 files, no impossibilities.
+# ../../../SRC/Startup (device 16777235, inode 206790): 4 files, no impossibilities.
+
+# 81 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+ch32v30x_rcc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+debug.d: main.c system_ch32v30x.c startup_ch32v30x_D8C.s ../../../SRC/Peripheral/src/ch32v30x_gpio.c ../../../SRC/Peripheral/src/ch32v30x_usart.c ../../../SRC/Peripheral/src/ch32v30x_rcc.c ../../../SRC/Peripheral/src/ch32v30x_misc.c debug.c
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: gpio_toggle.hex
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: clean depend
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 13:00:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.c.d:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 82):
+	$(CC) $(CFLAGS) $(INCLUDES) -o $@ -c $<
+	
+
+# Not a target:
+ch32v30x_misc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ch32v30x_usart.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+startup_ch32v30x_D8C.d: main.c system_ch32v30x.c startup_ch32v30x_D8C.s ../../../SRC/Peripheral/src/ch32v30x_gpio.c ../../../SRC/Peripheral/src/ch32v30x_usart.c ../../../SRC/Peripheral/src/ch32v30x_rcc.c ../../../SRC/Peripheral/src/ch32v30x_misc.c debug.c
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-01 21:50:57
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+system_ch32v30x.d: main.c system_ch32v30x.c startup_ch32v30x_D8C.s ../../../SRC/Peripheral/src/ch32v30x_gpio.c ../../../SRC/Peripheral/src/ch32v30x_usart.c ../../../SRC/Peripheral/src/ch32v30x_rcc.c ../../../SRC/Peripheral/src/ch32v30x_misc.c debug.c
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ch32v30x_gpio.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.s.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 76):
+	$(CC) $(SFLAGS) $(INCLUDES) -o $@ -c $<
+	
+
+main.d: main.c system_ch32v30x.c startup_ch32v30x_D8C.s ../../../SRC/Peripheral/src/ch32v30x_gpio.c ../../../SRC/Peripheral/src/ch32v30x_usart.c ../../../SRC/Peripheral/src/ch32v30x_rcc.c ../../../SRC/Peripheral/src/ch32v30x_misc.c debug.c
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+depend:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+startup_ch32v30x_D8C.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+system_ch32v30x.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../../../SRC/Peripheral/src/ch32v30x_gpio.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 13:00:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ch32v30x_gpio.d: main.c system_ch32v30x.c startup_ch32v30x_D8C.s ../../../SRC/Peripheral/src/ch32v30x_gpio.c ../../../SRC/Peripheral/src/ch32v30x_usart.c ../../../SRC/Peripheral/src/ch32v30x_rcc.c ../../../SRC/Peripheral/src/ch32v30x_misc.c debug.c
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+debug.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-29 13:40:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../SRC/Peripheral/src/ch32v30x_rcc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 13:00:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 98):
+	$(RM) $(TARGETS) $(OBJS) $(DEPENDS) $(ELF_FILE_NAME) $(DUMP_FILE_NAME) $(MAP_FILE_NAME) $(WCH_START_SOURCES)
+	
+
+ch32v30x_rcc.d: main.c system_ch32v30x.c startup_ch32v30x_D8C.s ../../../SRC/Peripheral/src/ch32v30x_gpio.c ../../../SRC/Peripheral/src/ch32v30x_usart.c ../../../SRC/Peripheral/src/ch32v30x_rcc.c ../../../SRC/Peripheral/src/ch32v30x_misc.c debug.c
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+main.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+gpio_toggle.hex: main.o system_ch32v30x.o startup_ch32v30x_D8C.o ch32v30x_gpio.o ch32v30x_usart.o ch32v30x_rcc.o ch32v30x_misc.o debug.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 16:44:20
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 92):
+	$(CC) $(LDFLAGS) -o $(ELF_FILE_NAME) $(OBJS)
+	$(OBJCOPY) -O ihex $(ELF_FILE_NAME) $@
+	$(OBJDUMP) --all-headers --demangle --disassemble $(ELF_FILE_NAME) > $(DUMP_FILE_NAME)
+	
+
+# Not a target:
+../../../SRC/Peripheral/src/ch32v30x_misc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 13:00:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 79):
+	$(CC) $(CFLAGS) $(INCLUDES) -o $@ -c $<
+	
+
+ 
+ch32v30x_misc.d: main.c system_ch32v30x.c startup_ch32v30x_D8C.s ../../../SRC/Peripheral/src/ch32v30x_gpio.c ../../../SRC/Peripheral/src/ch32v30x_usart.c ../../../SRC/Peripheral/src/ch32v30x_rcc.c ../../../SRC/Peripheral/src/ch32v30x_misc.c debug.c
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../../../SRC/Peripheral/src/ch32v30x_usart.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 13:00:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+startup_ch32v30x_D8C.s:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 22:43:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+system_ch32v30x.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 13:00:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ch32v30x_usart.d: main.c system_ch32v30x.c startup_ch32v30x_D8C.s ../../../SRC/Peripheral/src/ch32v30x_gpio.c ../../../SRC/Peripheral/src/ch32v30x_usart.c ../../../SRC/Peripheral/src/ch32v30x_rcc.c ../../../SRC/Peripheral/src/ch32v30x_misc.c debug.c
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=35/1024=3%, Rehash=0, Collisions=3/159=2%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# General (`VPATH' variable) search path:
+# ../../../SRC/Startup:../../../SRC/Peripheral/src:../../../SRC/Debug
+
+# # of strings in strcache: 9
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 3967 / max = 3967 / min = 3967 / avg = 3967
+
+# Finished Make data base on Mon Jul  4 22:43:36 2022
+
+ 

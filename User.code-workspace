@@ -1,0 +1,59 @@
+{
+	"tasks": {
+	  "version": "2.0.0",
+	  "tasks": [
+		{
+		  "label": "run_openocd",
+		  "type": "process",
+		  "isBackground": true,
+		  "command": "${userHome}/csfs/openocd/openocd",
+		  "args": ["-f", "${userHome}/csfs/openocd/wch-riscv.cfg"],
+		  "problemMatcher": [
+			{
+			  "pattern": [
+			  {
+				"regexp": ".",
+				"file": 1,
+				"location": 2,
+				"message": 3
+			  }
+			  ],
+			  "background": {
+			  "activeOnStart": true,
+			  "beginsPattern": ".",
+			  "endsPattern": ".",
+			  }
+			}
+			]
+		}
+	  ]
+	},
+	"folders": [
+	  {
+		"path": "."
+	  }
+	],
+	"launch": {
+	  "version": "0.2.0",
+	  "configurations": [
+		{
+		  "name": "gdb-openocd",
+		  "type": "gdb",
+		  "request": "attach",
+		  "executable": "gpio_toggle.elf",
+		  "remote": true,
+		  "target": ":3333",
+		  "cwd": "${workspaceRoot}",
+		  "gdbpath": "${userHome}/csfs/x-tools/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb",
+		  "preLaunchTask": "run_openocd",
+		  "autorun": [
+			"set mem inaccessible-by-default off",
+			"set architecture riscv:rv32",
+			"set remotetimeout unlimited",
+			"monitor reset halt",
+			"load"
+		  ]
+		}
+	  ]
+	}
+  }

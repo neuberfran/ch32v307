@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/neuberfran/csfs/openocd/ch32v307/EVT/EXAM/GPIO/GPIO_Toggle/User'
+riscv32-unknown-elf-gcc -E  ../../../SRC/Startup/startup_ch32v30x_D8C.S > startup_ch32v30x_D8C.s
+riscv32-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -g -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -MMD -I . -I ../../../SRC/Core -I ../../../SRC/Peripheral/inc -I ../../../SRC/Debug -o main.o -c main.c
+riscv32-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -g -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -MMD -I . -I ../../../SRC/Core -I ../../../SRC/Peripheral/inc -I ../../../SRC/Debug -o system_ch32v30x.o -c system_ch32v30x.c
+riscv32-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -g -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -MMD -I . -I ../../../SRC/Core -I ../../../SRC/Peripheral/inc -I ../../../SRC/Debug -o ch32v30x_gpio.o -c ../../../SRC/Peripheral/src/ch32v30x_gpio.c
+riscv32-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -g -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -MMD -I . -I ../../../SRC/Core -I ../../../SRC/Peripheral/inc -I ../../../SRC/Debug -o ch32v30x_usart.o -c ../../../SRC/Peripheral/src/ch32v30x_usart.c
+riscv32-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -g -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -MMD -I . -I ../../../SRC/Core -I ../../../SRC/Peripheral/inc -I ../../../SRC/Debug -o ch32v30x_rcc.o -c ../../../SRC/Peripheral/src/ch32v30x_rcc.c
+riscv32-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -g -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -MMD -I . -I ../../../SRC/Core -I ../../../SRC/Peripheral/inc -I ../../../SRC/Debug -o ch32v30x_misc.o -c ../../../SRC/Peripheral/src/ch32v30x_misc.c
+riscv32-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -g -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wunused -Wuninitialized -MMD -I . -I ../../../SRC/Core -I ../../../SRC/Peripheral/inc -I ../../../SRC/Debug -o debug.o -c debug.c
+make: Leaving directory `/Users/neuberfran/csfs/openocd/ch32v307/EVT/EXAM/GPIO/GPIO_Toggle/User'
+ 
+/bin/sh: riscv32-unknown-elf-gcc: command not found
+
